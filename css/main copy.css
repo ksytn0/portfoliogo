@@ -1,0 +1,929 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&display=swap");
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 300, 400, 500, 600, 700, 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HSSaemaul-Regular";
+  src: url("../font/HSSaemaul-Regular.ttf");
+}
+body {
+  overflow-x: hidden;
+}
+
+/**********헤더(head)**********/
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  padding: 50px 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  transition: padding 0.3s;
+}
+
+.gnb {
+  position: absolute;
+  right: 160px;
+  width: 640px;
+}
+
+.gnb ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gnb ul li a {
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #BDBDC3;
+  transition: 0.4s;
+}
+
+.active {
+  font-weight: 700 !important;
+  color: #464646 !important;
+  transition: 0.4s;
+}
+
+.gnb ul li:hover a {
+  color: #4E4FEB;
+}
+
+.gnb ul li a.active::after {
+  width: 100%;
+}
+
+.gnb ul li:hover a::after {
+  width: 100%;
+}
+
+.gnb ul li a::after {
+  display: block;
+  content: "";
+  width: 0px;
+  height: 3px;
+  margin-top: 3px;
+  background-color: #4E4FEB;
+  transition: 0.4s;
+}
+
+/**********메인(main)**********/
+.pg {
+  height: 100vh;
+  outline: 1px solid #00f;
+}
+
+section {
+  position: relative;
+  background: #F8F8F8;
+}
+
+/***프롤로그(.pg_prologue)***/
+.pg_prologue h2 {
+  display: none;
+}
+
+.bg_explainBox {
+  position: relative;
+  top: 25%;
+  left: 70%;
+  transform: translate(-50%);
+  width: 600px;
+  height: 345px;
+}
+
+.bg_explainBox img {
+  width: 100%;
+}
+
+.bg_explainBox h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #464646;
+}
+
+.bg_explainBox h3:nth-child(2) {
+  position: absolute;
+  top: 6px;
+}
+
+.bg_explainBox h3:nth-child(3) {
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+}
+
+.explain_prologue {
+  position: absolute;
+  top: 80px;
+  left: 65px;
+  width: 600px;
+  font-family: "Pretendard-Regular";
+  font-size: 40px;
+  color: #464646;
+  font-weight: 900;
+}
+
+.explain_prologue p {
+  position: absolute;
+}
+
+.explain_prologue p:nth-child(2) {
+  left: 300px;
+}
+
+.explain_prologue p:nth-child(3) {
+  top: 50px;
+}
+
+.explain_prologue p:nth-child(4) {
+  top: 50px;
+  left: 300px;
+}
+
+.explain_prologue p:nth-child(5) {
+  top: -8px;
+  left: 160px;
+}
+
+.explain_prologue p:last-child {
+  top: 100px;
+}
+
+.point_Color {
+  color: #4E4FEB;
+}
+
+.point_Size {
+  font-size: 95px;
+}
+
+.point_Font {
+  font-family: "HSSaemaul-Regular";
+}
+
+.bg_musicLines {
+  position: absolute;
+  top: -10px;
+  left: 30%;
+  transform: translate(-50%);
+  width: 510px;
+  height: 615px;
+  background: url("../images/bg_musicLines.png") no-repeat;
+  scale: 85%;
+}
+
+.bg_musicLines .musicNote {
+  position: absolute;
+}
+
+.bg_musicLines .noteHtmlCss {
+  top: 300px;
+  left: 110px;
+  animation: noteHtmlCss 3s infinite;
+}
+
+.bg_musicLines .noteJs {
+  top: 160px;
+  left: 180px;
+  animation: noteJs 2s infinite;
+}
+
+.bg_musicLines .noteJquery {
+  top: 240px;
+  left: 290px;
+  animation: noteJquery 1s infinite;
+}
+
+.bg_musicLines .noteFigma {
+  top: -30px;
+  left: 370px;
+  animation: noteFigma 2s infinite;
+}
+
+.bg_musicLines .notePhotoshop {
+  top: 470px;
+  left: 50px;
+  animation: notePhotoshop 5s infinite;
+}
+
+.bg_musicLines .noteIllust {
+  top: 120px;
+  left: 430px;
+  animation: noteIllust 4s infinite;
+}
+
+@keyframes noteHtmlCss {
+  0% {
+    top: 300px;
+  }
+  50% {
+    top: 350px;
+  }
+  100% {
+    top: 300px;
+  }
+}
+@keyframes noteJs {
+  0% {
+    top: 160px;
+    transform: rotate(-30deg);
+  }
+  50% {
+    top: 170px;
+    transform: rotate(30deg);
+  }
+  100% {
+    top: 160px;
+    transform: rotate(-30deg);
+  }
+}
+@keyframes noteJquery {
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+@keyframes noteFigma {
+  0% {
+    top: 30px;
+  }
+  50% {
+    top: -30px;
+  }
+  100% {
+    top: 30px;
+  }
+}
+@keyframes notePhotoshop {
+  0% {
+    transform: rotate(50deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(50deg);
+  }
+}
+@keyframes noteIllust {
+  0% {
+    transform: rotate(-10deg);
+  }
+  33% {
+    transform: rotate(-30deg);
+  }
+  66% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+.bg_guitar {
+  width: 1413px;
+  height: 743px;
+  position: absolute;
+  bottom: -320px;
+  left: 50%;
+  transform: translate(-50%);
+  background: url("../images/bg_guitar.png");
+  z-index: 9997;
+}
+
+.icon_scrollMouse {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translate(-50%);
+  animation: pickUpdown 2s infinite linear;
+  z-index: 9998;
+}
+
+.icon_scrollMouse .icon_pick p {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 12px;
+  color: #fff;
+}
+
+@keyframes pickUpdown {
+  0% {
+    bottom: 80px;
+  }
+  50% {
+    bottom: 60px;
+  }
+  100% {
+    bottom: 80px;
+  }
+}
+/***프로필(.pg_profile)***/
+.pg_profile {
+  height: 1200px;
+}
+
+.pg_profile h2 {
+  position: relative;
+  top: 180px;
+  left: 160px;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  z-index: 9998;
+}
+
+.pg_profile h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #4E4FEB;
+  padding-bottom: 20px;
+}
+
+.photoBox {
+  position: absolute;
+  top: 140px;
+  left: 110px;
+  width: 540px;
+}
+
+.photoBox .squareBig {
+  position: absolute;
+  width: 376px;
+  height: 376px;
+  background: #4E4FEB;
+  border: 1px solid #4E4FEB;
+}
+
+.photoBox .squareSmall {
+  position: absolute;
+  top: 425px;
+  right: 0px;
+  width: 210px;
+  height: 210px;
+  background: #4E4FEB;
+  border: 1px solid #4E4FEB;
+}
+
+.photoBox .squarePhoto {
+  position: absolute;
+  top: 113px;
+  left: 141px;
+}
+
+.photoBox .talk {
+  position: absolute;
+  top: 620px;
+  text-align: center;
+  line-height: 65px;
+  width: 500px;
+}
+
+.photoBox .talk p {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  font-family: "Nanum Pen Script", sans-serif;
+  font-size: 50px;
+}
+
+.Name {
+  position: absolute;
+  top: 220px;
+  left: 730px;
+  font-family: "Inter", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4E4FEB;
+}
+
+.point_Stroke {
+  -webkit-text-stroke: 2px #4E4FEB;
+  color: #fff;
+}
+
+.aboutMe {
+  position: absolute;
+  top: 380px;
+  left: 730px;
+}
+
+.aboutMe li {
+  display: flex;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.aboutMe li p:first-child {
+  width: 140px;
+  text-transform: uppercase;
+}
+
+.buttonBefore {
+  margin-top: 20px;
+  width: 152px;
+}
+
+.buttonBefore a {
+  display: block;
+  font-family: "Noto Sans KR", sans-serif;
+  text-decoration: none;
+  color: #4E4FEB;
+  border: 2px solid #4E4FEB;
+  border-radius: 30px;
+  padding: 14px 20px;
+  transition: 0.4s;
+}
+
+.buttonBefore:hover a {
+  color: #fff;
+  background: #4E4FEB;
+}
+
+.license {
+  position: absolute;
+  top: 380px;
+  left: 1200px;
+}
+
+.license li {
+  display: flex;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.license li p:first-child {
+  width: 140px;
+}
+
+.education {
+  position: absolute;
+  top: 650px;
+  left: 730px;
+}
+
+.education li {
+  display: flex;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.education li p:first-child {
+  width: 140px;
+}
+
+.skillBar {
+  position: relative;
+  top: 800px;
+  left: 730px;
+}
+
+.skillBar ul {
+  display: flex;
+  width: 903px;
+  flex-wrap: wrap;
+}
+
+.skillBar ul li {
+  display: flex;
+  width: 276px;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  margin-right: 25px;
+}
+
+.backBar {
+  width: 200px;
+  height: 20px;
+  border: 1px solid #E4E6E5;
+  border-radius: 10px;
+  background: #E4E6E5;
+}
+
+.frontBar {
+  width: 0%;
+  height: 20px;
+  border: 1px solid #4E4FEB;
+  border-radius: 10px;
+  background: #4E4FEB;
+}
+
+/*프로젝트(.pg_project)*/
+.pg_project {
+  position: relative;
+}
+
+.pg_project h2 {
+  position: fixed;
+  top: 120px;
+  left: 160px;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #4E4FEB;
+}
+
+.tpg {
+  height: calc(100vh + 3160px);
+  outline: 2px dashed #00f;
+}
+
+.slidePg {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+}
+
+.scroll_bg {
+  position: absolute;
+  width: 100%;
+}
+
+.slidePg ul {
+  position: relative;
+  left: 0px;
+  top: 55vh;
+  transform: translateY(-50%);
+  display: flex;
+  width: calc(100vw + 3160px);
+  background: url("../images/bg_projectGuitar.png") no-repeat !important;
+  transition: 0.8s ease-out;
+}
+
+.webRedesign {
+  width: 1000px;
+  height: 650px;
+  margin: 0px auto;
+  border: 1px solid #333;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.slider {
+  position: relative;
+}
+
+.slider h3 {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #4E4FEB;
+  white-space: nowrap;
+  color: #fff;
+}
+
+.slider .prev {
+  position: absolute;
+  top: 250px;
+}
+
+.slider .back {
+  left: -50px;
+}
+
+.slider .front {
+  right: 30px;
+}
+
+.slider .pagination {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
+
+.slider .pagination .dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #4E4FEB;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.slider .slides {
+  position: absolute;
+  top: 60px;
+  left: 70px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.slider .slides .slide {
+  position: relative;
+  width: 930px;
+}
+
+.slider .slides .slide h4 {
+  position: absolute;
+  top: 80px;
+  right: 50px;
+  font-weight: 900;
+  font-size: 30px;
+  color: #4E4FEB;
+}
+
+.slider .slides .slide img {
+  position: absolute;
+  left: 30px;
+  width: 516px;
+}
+
+.slider .slides .slide .durationPage li {
+  display: flex;
+  font-size: 20px;
+}
+
+.slider .slides .slide .durationPage li p:first-child {
+  width: 100px;
+}
+
+.slider .slides .slide .durationPage li p:nth-child(2) {
+  width: 200px;
+}
+
+.slider .slides .slide .webInformation {
+  position: absolute;
+}
+
+.slide .buttonGoup {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  width: 560px;
+}
+
+.slide .buttonBefore a {
+  display: block;
+  padding: 16px 24px;
+  border: 1px solid #4E4FEB;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #4E4FEB;
+  transition: 0.5s;
+}
+
+.slide .buttonBefore a:hover {
+  color: #fff;
+  background: #4E4FEB;
+}
+
+/*학습목록(.pg_learn)*/
+.pg_learn {
+  height: 625px;
+  background: #EEEEEE;
+}
+
+.pg_learn h2 {
+  position: relative;
+  top: 120px;
+  left: 160px;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #4E4FEB;
+}
+
+.pg_learn ul {
+  display: flex;
+  justify-content: space-between;
+  left: 50%;
+  position: relative;
+  top: 270px;
+  transform: translate(-50%);
+  width: 1290px;
+}
+
+.pg_learn .folderBox {
+  position: relative;
+  width: 110px;
+}
+
+.pg_learn .folderBox h3 {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #181818;
+}
+
+.pg_learn .folderBox img {
+  position: absolute;
+}
+
+.pg_learn .folderBox img:nth-of-type(2) {
+  top: -15px;
+  left: 5px;
+}
+
+.pg_learn .folderBox:nth-child(2) img:nth-of-type(2) {
+  left: -5px;
+}
+
+.pg_learn .folderBox:nth-child(4) img:nth-of-type(2) {
+  left: 18px;
+}
+
+.pg_learn .folderBox:nth-child(5) img:nth-of-type(2) {
+  left: 18px;
+}
+
+.pg_learn .folderBox img:last-of-type {
+  top: 27px;
+}
+
+/*에필로그(.pg_epilogue{position:relative;})*/
+.pg_epilogue {
+  height: 1080px;
+}
+
+.pg_epilogue h2 {
+  position: relative;
+  top: 120px;
+  left: 160px;
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #4E4FEB;
+}
+
+.pg_epilogue .contactImg {
+  width: 960px;
+  height: 780px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.pg_epilogue .contactImg > img {
+  position: relative;
+  left: 160px;
+  display: block;
+}
+
+.pg_epilogue .contactImg > div {
+  position: absolute;
+  bottom: 135px;
+  width: 100%;
+  height: 200px;
+  border: 1px solid #4E4FEB;
+  background: #4E4FEB;
+}
+
+.pg_epilogue > .talkBox {
+  position: absolute;
+  top: 280px;
+  left: 58%;
+}
+
+.pg_epilogue > .talkBox img {
+  animation: talkani 2s infinite;
+}
+
+.pg_epilogue > .talkBox p {
+  position: relative;
+  top: -300px;
+  left: 10px;
+  font-family: "Nanum Pen Script", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  line-height: 40px;
+}
+
+@keyframes talkani {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+.pg_epilogue .contactMe {
+  position: absolute;
+  right: 160px;
+  bottom: 200px;
+  width: 314px;
+  text-transform: uppercase;
+}
+
+.pg_epilogue .contactMe h3 {
+  position: relative;
+  left: 155px;
+  padding-bottom: 20px;
+  font-size: 24px;
+  color: #4E4FEB;
+}
+
+.pg_epilogue .contactMe ul li {
+  display: flex;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.pg_epilogue .contactMe ul li:first-child p:nth-child(2) {
+  padding-left: 75px;
+}
+
+.pg_epilogue .contactMe ul li p:first-child {
+  width: 100px;
+}
+
+.pg_epilogue .contactMe ul li p:nth-child(2) {
+  width: 214px;
+}
+
+/***푸터(footer)***/
+footer {
+  width: 100%;
+  height: 150px;
+  background: #E4E6E5;
+  text-align: center;
+}
+
+#footer_info {
+  font-family: "NeoDunggeunmoPro-Regular";
+  padding-top: 55px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  line-height: 24px;
+  color: #333;
+}
+
+/***기타 서식***/
+#scrollNum {
+  position: fixed;
+  top: 150px;
+  left: 100px;
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  line-height: 100px;
+  z-index: 5;
+}
+
+#top_btn {
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  z-index: 5;
+  cursor: pointer;
+  animation: topbtn 2s infinite;
+}
+
+#top_btn img {
+  width: 80%;
+}
+
+@keyframes topbtn {
+  0% {
+    bottom: 15px;
+  }
+  50% {
+    bottom: 30px;
+  }
+  100% {
+    bottom: 15px;
+  }
+}/*# sourceMappingURL=main copy.css.map */

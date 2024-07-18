@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김시연 포트폴리오</title>
+
+    <!--초기화-->
+    <link href="./css/reset.css" rel="stylesheet" type="text/css">
+    <!--기본서식-->
+    <link href="./css/base.css" rel="stylesheet" type="text/css">
+    <!--메인서식-->
+    <link href="./css/main.css" rel="stylesheet" type="text/css">
+    <!--폰트어썸 아이콘포트 주소-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" type="text/css">
+
+    <!--제이쿼리 라이브러리-->
+    <script src="./library/jquery-3.7.1.js"></script>
+    <!--제이쿼리 쿠키플러그-->
+    <script src="./library/jquery.cookie.js"></script>
+    <!-- 제이쿼리 UI라이브러리 -->
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <!--스크롤넘버-->
+    <script src="./script/scrollNum.js"></script>
+    <!--가로이동 스크롤-->
+    <script src="./script/scrollLayout.js"></script>
+    <!--최상단(.intro)이동 버튼-->
+    <script src="./script/top_button.js"></script>
+    <!--네비게이션(.gnb) 버튼-->
+    <script src="./script/gnb.js"></script>
+    <!--스킬바(.skillBar) 무빙-->
+    <script src="./script/progressBar.js"></script>
+    <!--프로젝트 타이틀-->
+    <script src="./script/projectH2.js"></script>
+    <!--학습목록 아이콘(.folderGroup div:nth(2)) 무빙-->
+    <script src="./script/studyList.js"></script>
+    <!--프로젝트 슬라이드-->
+    <script src="./script/projectSlide.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="gnb">
+            <ul>
+                <li><a href="#" title="프롤로그" class="active">prologue</a></li>
+                <li><a href="#" title="프로필">profile</a></li>
+                <li><a href="#" title="프로젝트">project</a></li>
+                <li><a href="#" title="에필로그">epilogue</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--프롤로그(세로이동 페이지)-->
+        <section class="pg pg_prologue">
+            <h2>프롤로그</h2>
+            <!--프롤로그 설명(백그라운드이미지)-->
+            <div class="bg_explainBox">
+                <img src="./images/bg_explainBox.png" alt="">
+                <h3>web bublisher</h3>
+                <h3>2024 portfolio</h3>
+                <div class="explain_prologue">
+                    <p>듣기 좋은</p>
+                    <p>를 연주하듯,</p>
+                    <p>보기 좋은</p>
+                    <p>를 치는</p>
+                    <p><span class="point_Color point_Size point_Font">코드</span></p>
+                    <p>웹퍼블리셔 <span class="point_Color point_Size point_Font">김시연</span> 입니다.</p>
+                </div>
+            </div>
+            <!--악보(백그라운드이미지)-->
+            <div class="bg_musicLines">
+                <div class="musicNote noteHtmlCss"><img src="./images/note_htmlcss.png" alt="html,css"></div>
+                <div class="musicNote noteJs"><img src="./images/note_javascript.png" alt="javascript"></div>
+                <div class="musicNote noteJquery"><img src="./images/note_jquery.png" alt="jquery"></div>
+                <div class="musicNote noteFigma"><img src="./images/note_figma.png" alt="figma"></div>
+                <div class="musicNote notePhotoshop"><img src="./images/note_photoshop.png" alt="photoshop"></div>
+                <div class="musicNote noteIllust"><img src="./images/note_illustrate.png" alt="illustrate"></div>
+            </div>
+            <!--기타(백그라운드이미지)-->
+            <div class="bg_guitar">&nbsp;</div>
+            <!--피크(마우스 스크롤)-->
+            <div class="icon_scrollMouse">
+                <div class="icon_pick">
+                    <img src="./images/icon_pick.png" alt="스크롤마우스">
+                    <p class="txt_scrollDown">scroll<br>down</p>
+                </div>
+            </div>
+        </section>
+
+        <!--프로필(세로이동 페이지)-->
+        <section class="pg pg_profile">
+            <h2>profile</h2>
+            <!--프로필 사진-->
+            <div class="photoBox">
+                <div class="squareBig"></div>
+                <div class="squareSmall"></div>
+                <div class="squarePhoto"><img src="./images/profilePhoto.png" alt=""></div>
+                <div class="talk">
+                    <img src="./images/bg_talk.png" alt="">
+                    <p>안녕하세요.<br>신입 웹퍼블리셔 김시연 입니다!</p>
+                </div>
+            </div>
+            <!--이름-->
+            <div class="Name">
+                <span class="point_Stroke">kim</span><br>si yeon
+            </div>
+            <!--about me-->
+            <div class="aboutMe">
+                <h3>about me</h3>
+                <ul>
+                    <li>
+                        <p>birth</p>
+                        <p>1998. 02. 04</p>
+                    </li>
+                    <li>
+                        <p>phone</p>
+                        <p>010 - 4431 - 0577</p>
+                    </li>
+                    <li>
+                        <p>e-mail</p>
+                        <p>ksytn0 @ naver.com</p>
+                    </li>
+                    <li>
+                        <p>character</p>
+                        <p>#infj #활기찬 #꼼꼼한 #체계적인</p>
+                    </li>
+                </ul>
+                <div class="buttonBefore"><a href="./submit_kimsiyeon.pdf" title="이력서 바로가기">이력서 바로가기</a></div>
+            </div>
+            <!--license-->
+            <div class="license">
+                <h3>license</h3>
+                <ul>
+                    <li>
+                        <p>2024. 06</p>
+                        <p>웹디자인 기능사</p>
+                    </li>
+                    <li>
+                        <p>2024. 03</p>
+                        <p>gtq(포토샵) 1급</p>
+                    </li>
+                    <li>
+                        <p>2018. 07</p>
+                        <p>2종보통 운전면허</p>
+                    </li>
+                </ul>
+            </div>
+            <!--education-->
+            <div class="education">
+                <h3>education</h3>
+                <ul>
+                    <li>
+                        <p>2024. 02</p>
+                        <p>[그린컴퓨터아트학원] UI/UX 반응형 웹디자인&웹퍼블리셔 양성과정 수료</p>
+                    </li>
+                    <li>
+                        <p>2024. 02</p>
+                        <p>[한국기술교육대학교] 기계공학부 졸업</p>
+                    </li>
+                    <li>
+                        <p>2017. 02</p>
+                        <p>[일신여자고등학교] 이공계 졸업</p>
+                    </li>
+                </ul>
+            </div>
+            <!--skill stack(게이지바)-->
+            <div class="skillBar">
+                <h3>skill stack</h3>
+                <ul>
+                    <li>
+                        <img src="./images/icon_html.png" alt="html">
+                        <div class="backBar">
+                            <div class="frontBar"><span data-width="80%"></span></div>
+                        </div>
+                        <p>80%</p>
+                    </li>
+                    <li>
+                        <img src="./images/icon_git.png" alt="git">
+                        <div class="backBar">
+                            <div class="frontBar"><span data-width="30%"></span></div>
+                        </div>
+                        <p>30%</p>
+                    </li>
+                    <li>
+                        <img src="./images/icon_photoshop.png" alt="photoshop">
+                        <div class="backBar">
+                            <div class="frontBar"><span data-width="80%"></span></div>
+                        </div>
+                        <p>80%</p>
+                    </li>
+                    <li>
+                        <img src="./images/icon_css.png" alt="css">
+                        <div class="backBar">
+                            <div class="frontBar"><span data-width="70%"></span></div>
+                        </div>
+                        <p>70%</p>
+                    </li>
+                    <li>
+                        <img src="./images/icon_sass.png" alt="sass">
+                        <div class="backBar">
+                            <div class="frontBar"><span data-width="70%"></span></div>
+                        </div>
+                        <p>70%</p>
+                    </li>
+                    <li>
+                        <img src="./images/icon_illustrate.png" alt="illustrate">
+                        <div class="backBar">
+                            <div class="frontBar"><span data-width="80%"></span></div>
+                        </div>
+                        <p>80%</p>
+                    </li>
+                    <li>
+                        <img src="./images/icon_javascript.png" alt="javascript">
+                        <div class="backBar">
+                            <div class="frontBar"><span data-width="30%"></span></div>
+                        </div>
+                        <p>30%</p>
+                    </li>
+                    <li>
+                        <img src="./images/icon_bootstrap.png" alt="bootstrap">
+                        <div class="backBar">
+                            <div class="frontBar"><span data-width="20%"></span></div>
+                        </div>
+                        <p>20%</p>
+                    </li>
+                    <li>
+                        <img src="./images/icon_figma.png" alt="figma">
+                        <div class="backBar">
+                            <div class="frontBar"><span data-width="70%"></span></div>
+                        </div>
+                        <p>70%</p>
+                    </li>
+                    <li>
+                        <img src="./images/icon_jquery.png" alt="jquery">
+                        <div class="backBar">
+                            <div class="frontBar"><span data-width="60%"></span></div>
+                        </div>
+                        <p>60%</p>
+                    </li>
+                    <li>
+                        <img src="./images/icon_gnuboard.png" alt="gnuboard">
+                        <div class="backBar">
+                            <div class="frontBar"><span data-width="10%"></span></div>
+                        </div>
+                        <p>10%</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+<!--**********************************************************************-->
+        <!--프로젝트(가로이동 페이지)-->
+        <section class="pg_project">
+            <div class="pg tpg"><!--타겟페이지(스크롤식 가로이동)-->
+                <h2>project</h2>
+                <div class="slidePg"><!--옆으로 흘러갈 박스-->
+                    <div class="scroll_bg">
+                        <ul>
+                            <li class="web">
+                                <img src="./images/mockup_socar.png" alt="목업">
+                                <div class="txtbox">
+                                    <h3>쏘카</h3>
+                                    <p>사용자가 주로 알고싶어하는 정보를 메인페이지에 배치하여 <span class="maincolor">리디자인</span>한 <span class="maincolor">반응형웹</span> 사이트 입니다.<br><br>제작범위 : main</p>
+                                    <div class="buttonBefore"><a href="https://ksytn0.github.io/socar/" titile="쏘카">바로가기</a></div>
+                                </div>
+                            </li>
+                            <li class="web">
+                                <img src="./images/mockup_harim.png" alt="목업">
+                                <div class="txtbox">
+                                    <h3>하림펫푸드</h3>
+                                    <p>기존의 하림펫푸드를 <span class="maincolor">클론코딩</span>한 <span class="maincolor">반응형웹</span> 사이트입니다.<br><br>제작범위 : main</p>
+                                    <div class="buttonBefore"><a href="https://ksytn0.github.io/harim1211/" titile="하림펫푸드">바로가기</a></div>
+                                </div>
+                            </li>
+                            <li class="web">
+                                <img src="./images/mockup_hanriver.png" alt="목업">
+                                <div class="txtbox">
+                                    <h3>한강술래</h3>
+                                    <p>ux/ui를 고려하여 한강공원을 이용하는 사람들을 위해 창작한 <span class="maincolor">적응형웹</span> 사이트입니다.<br><br>제작범위 : main, sub, login, join</p>
+                                    <div>
+                                        <div class="buttonBefore"><a href="https://ksytn0.github.io/hanriver_pc/" titile="한강술래">pc.ver</a></div>
+                                        <div class="buttonBefore"><a href="https://ksytn0.github.io/hanriver_mobile/login.html" titile="한강술래">mobile.ver</a></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="web">
+                                <img src="./images/mockup_harim.png" alt="목업">
+                                <div class="txtbox">
+                                    <h3>에스티로더</h3>
+                                    <p>기존의 에스티로더 사이트를 <span class="maincolor">리디자인</span>하였습니다.<br><br>제작범위 : main(개발중)</p>
+                                    <div class="buttonBefore"><a href="https://www.figma.com/design/lIAEFCQ2uWEiaNZsiHvq5o/%EC%97%90%EC%8A%A4%ED%8B%B0%EB%A1%9C%EB%8D%94?node-id=178-402&t=6iKBxVtxCSyugGFV-1" titile="에스티로더">figma</a></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--**********************************************************************-->
+        <!--디자인(세로이동 페이지)-->
+        <!-- <section class="pg pg_design"></section> -->
+
+        <!--학습목록(세로이동 페이지)-->
+        <!-- <section class="pg pg_learn">
+            <h2>LEARN</h2>
+            <ul>
+                <li class="folderBox">
+                    <h3>HTML</h3>
+                    <a href="#" title="">
+                    <img src="./images/backFolder_bl.png" alt="">
+                    <img src="./images/iconn_html.png" alt="html이미지">
+                    <img src="./images/frontFolder_bl.png" alt="">
+                    </a>
+                </li>
+                <li class="folderBox">
+                    <h3>CSS&SASS</h3>
+                    <a href="http://divinep.dothome.co.kr/studyList/2.cssNsass/index.html" title="">
+                    <img src="./images/backFolder_gr.png" alt="">
+                    <img src="./images/iconn_cssNsass.png" alt="html이미지">
+                    <img src="./images/frontFolder_gr.png" alt="">
+                    </a>
+                </li>
+                <li class="folderBox">
+                    <h3>JS&JQUERY</h3>
+                    <a href="http://divinep.dothome.co.kr/studyList/3.jsNjquery/index.html" title="">
+                    <img src="./images/backFolder_or.png" alt="">
+                    <img src="./images/iconn_jsNjquery.png" alt="html이미지">
+                    <img src="./images/frontFolder_or.png" alt="">
+                    </a>
+                </li>
+                <li class="folderBox">
+                    <h3>BOOTSTRAP</h3>
+                    <a href="#" title="">
+                    <img src="./images/backFolder_ye.png" alt="">
+                    <img src="./images/iconn_bootstrap.png" alt="html이미지">
+                    <img src="./images/frontFolder_ye.png" alt="">
+                    </a>
+                </li>
+                <li class="folderBox">
+                    <h3>git</h3>
+                    <a href="#" title="">
+                    <img src="./images/backFolder_pi.png" alt="">
+                    <img src="./images/iconn_git.png" alt="html이미지">
+                    <img src="./images/frontFolder_pi.png" alt="">
+                    </a>
+                </li>
+                <li class="folderBox">
+                    <h3>??</h3>
+                    <a href="#" title="">
+                    <img src="./images/backFolder_sk.png" alt="">
+                    <img src="" alt="">
+                    <img src="./images/frontFolder_sk.png" alt="">
+                    </a>
+                </li>
+                <li class="folderBox">
+                    <h3>??</h3>
+                    <a href="#" title="">
+                    <img src="./images/backFolder_gray.png" alt="">
+                    <img src="" alt="">
+                    <img src="./images/frontFolder_gray.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </section> -->
+
+        <!--컨택(세로이동 페이지)-->
+        <section class="pg pg_epilogue">
+            <h2>epilogue</h2>
+            <div class="contactImg">
+                <div>&nbsp;</div>
+                <img src="./images/contactimg.png" alt="이미지">
+            </div>
+            <div class="talkBox">
+                <img src="./images/bg_talkBox.png" alt="">
+                <p>무대위에서 베이스기타 소리는 눈에 띄지는 않지만<br>
+                    베이스소리가 없다면 무대 전체의 중심을 잡아주지 못합니다.<br>
+                    무대 위 베이스(bass) 연주처럼<br> 
+                    팀원과의 협업에서 기본(base)이 탄탄한,<br>
+                    웹사이트의 중심을 잡아줄 수 있는<br>
+                    마크업을 지향하고 꾸준히 노력합니다.</p>
+            </div>
+            <div class="contactMe">
+                <h3>contact me</h3>
+                <ul>
+                    <li>
+                        <p>phone</p>
+                        <p>010 - 4431 - 0577</p>
+                    </li>
+                    <li>
+                        <p>e-mail</p>
+                        <p>ksytn0 @ naver.com</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p id="footer_info">해당 사이트는 개인 포트폴리오 목적으로 제작 되었으며 1920px 해상도에 최적화 되어 있습니다.<br>특정 기능(가로 스크롤)을 구현하기 위해 해상도별 지원이 되지 않는 점 양해 부탁드립니다.</p>
+    </footer>
+
+<!--**********************************************************************-->
+    <!-- scroll값 표시 -->
+    <!-- <span id="scrollNum">
+        RESULT
+    </span> -->
+
+    <!--intro(top)로 이동 버튼-->
+    <span id="top_btn">
+        <img src="./images/topbtn.png" alt="top버튼">
+    </span>
+
+    <!-- popup 알림창 -->
+    <!-- <div id="popup_bg">
+        <div id="popup">
+            <div id="popup_tit">해상도 지원 안내창</div>
+            <div id="popup_txt">해당 사이트는 개인 포트폴리오 목적으로 제작되었으며, <br><span>1920px 해상도에 최적화</span>되어 있습니다. <br>특정 기능(가로 스크롤)을 구현하기 위해, <br>해상도별 지원이 되지 않는 점을 알려드립니다.</div>
+            <span id="close">닫기</span>
+        </div>
+    </div> -->
+</body>
+</html>
